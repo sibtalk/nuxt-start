@@ -16,6 +16,7 @@
     "nuxt": "^3.12.4"
   },
   "dependencies": {
-    "@highlightjs/vue-plugin": "^2.1.0"
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@iconify/utils": "^2.1.32"
   }
 }
