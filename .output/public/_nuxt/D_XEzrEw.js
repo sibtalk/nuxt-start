@@ -1,0 +1,7 @@
+import{b as l,_,a as m}from"./B3zquSP6.js";import{_ as d}from"./PcTkO1xm.js";import{u as f}from"./R1uRXwHW.js";import{r as g,k as p,w as e,o as u,a as o,b as t}from"./Beq5FGG7.js";import"./BTkhQvUH.js";const x=o("h1",{class:"color-primary text-center mb-8"},"Стартовый шаблон",-1),h={class:"flex flex-col dynamic-font-size lg:flex-row"},b={class:"w-full lg:w-[75%]"},v={class:"lg:mr-8"},w=o("h2",{class:"mb-6 text-center lg:text-left"},"Первые шаги",-1),y={class:"flex justify-between mt-16 mb-8"},k={class:"hidden lg:w-[25%] lg:inline-block"},i="Стартовый шаблон Nuxt 3",a="Краткое описание содержания страницы. До 300 символов",U={__name:"index",setup(C){return f({title:i+" ▸ IP-55:dev",ogTitle:i+" ▸ IP-55:dev",description:a,ogDescription:a,ogImage:"files/img/logo_max.png",twitterCard:"summary_large_image"}),g(`<input v-model="demo">
+<div>{{ demo }}</div>
+
+const demo = ref("Я реактивная строка")
+
+// Всего три строки кода делают это. Потрясающе!
+`),(P,B)=>{const n=_,s=d,r=m,c=l;return u(),p(c,{class:"bg-[#ffffff] dark:bg-[#121212] py-8 mb-10"},{default:e(()=>[x,o("div",h,[o("div",b,[o("div",v,[w,o("div",y,[t(s,{to:"/"},{default:e(()=>[t(n,{icon:"i-heroicons-arrow-long-left",size:"xl",color:"primary",variant:"outline",label:" В Начало",trailing:!1})]),_:1}),t(s,{to:"/start/config"},{default:e(()=>[t(n,{icon:"i-heroicons-arrow-long-right",size:"xl",color:"primary",variant:"solid",label:"Конфигурации шаблона ",trailing:!0})]),_:1})])])]),o("div",k,[t(r,{class:"sticky top-3"})])])]),_:1})}}};export{U as default};

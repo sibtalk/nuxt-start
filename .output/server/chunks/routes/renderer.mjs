@@ -101,7 +101,7 @@ const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
 
-const appHead = {"meta":[{"charset":"utf-8"},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"Базовое тело шаблона WEB:гурман"},{"property":"og:image","content":"https://example.com/site.img"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"stylesheet","href":"/css/main.css"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/fav/apple-touch-icon.png"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/fav/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/fav/favicon-16x16.png"},{"rel":"manifest","href":"/fav/site.webmanifest"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"ru","prefix":"og: https://ogp.me/ns#"}};
+const appHead = {"meta":[{"charset":"utf-8"},{"property":"og:type","content":"website"},{"property":"og:site_name","content":"Базовое тело шаблона WEB:гурман"},{"property":"og:image","content":"https://example.com/site.img"},{"name":"viewport","content":"width=device-width, initial-scale=1"}],"link":[{"rel":"apple-touch-icon","sizes":"180x180","href":"/fav/apple-touch-icon.png"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/fav/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/fav/favicon-16x16.png"},{"rel":"manifest","href":"/fav/site.webmanifest"}],"style":[],"script":[],"noscript":[],"htmlAttrs":{"lang":"ru","prefix":"og: https://ogp.me/ns#"}};
 
 const appRootTag = "div";
 

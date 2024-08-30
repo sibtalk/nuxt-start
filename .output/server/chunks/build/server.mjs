@@ -1634,7 +1634,7 @@ const plugins = [
   plugin_WLsn00x1qh
 ];
 const layouts = {
-  default: () => import('./default-DWBHyI7t.mjs').then((m) => m.default || m)
+  default: () => import('./default-DgFsj-uB.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

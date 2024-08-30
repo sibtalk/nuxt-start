@@ -18,7 +18,6 @@ export default defineNuxtConfig({
         // { src: 'https://awesome-lib.js' }
       ],
       link: [
-        { rel: 'stylesheet', href: '/css/main.css' },
         { rel: 'apple-touch-icon', sizes:'180x180', href: '/fav/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes:'32x32', href: '/fav/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes:'16x16', href: '/fav/favicon-16x16.png' },
