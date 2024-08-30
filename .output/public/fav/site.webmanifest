@@ -1,0 +1,15 @@
+{
+    "name": "IP-55:dev",
+    "short_name": "IP-55",
+    "icons": [
+        {
+            "src": "/fav/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "rgba(0, 0, 0, 0)",
+    "background_color": "rgba(0, 0, 0, 0)",
+    "start_url": "/",
+    "display": "fullscreen"
+}
