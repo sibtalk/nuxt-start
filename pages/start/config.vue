@@ -46,7 +46,7 @@ useSeoMeta({
   ogTitle: titlePage + " " + String.fromCharCode(9656) + " IP-55:dev",
   description: descPage,
   ogDescription: descPage,
-  ogImage: "files/img/logo_max.png",
+  ogImage: "/files/img/ip55_ogg.jpg",
   twitterCard: "summary_large_image",
 });
 

@@ -12,11 +12,21 @@
 
 <script setup>
 useHead({
-  title: "Базовое тело шаблона WEB:гурман"
+  title: "Базовое тело шаблона IP-55:dev",
+  meta: [
+    { name: "google", content: "notranslate" }
+  ],
 });
 
 let lastScrollTop = 70;
-let navbar = ref(null);
+
+const navbar = ref(null)
+
+const setNavbarWidth = (width) => {
+  if (navbar.value) {
+    navbar.value.style.width = width
+  }
+}
 
 if (process.client) {
   window.addEventListener("scroll", handleScroll);
@@ -47,6 +57,11 @@ function handleScroll() {
     }
   }
 }
+onMounted(() => {
+  navbar.value = document.querySelector('header')
+})
+
+provide('setNavbarWidth', setNavbarWidth)
 </script>
 <style>
 html,
@@ -63,6 +78,7 @@ main {
   flex: 1 0 auto;
   width: 100%;
 }
+
 .footer {
   flex: 0 0 auto;
 }
@@ -155,6 +171,10 @@ header {
   position: fixed;
   top: 0;
   transition: all 0.3s;
+  left: 0;
+  width: calc(100% + var(--navbar-padding-right));
+  padding-right: var(--navbar-padding-right);
+  box-sizing: border-box;
 }
 header.active {
   top: -60px;

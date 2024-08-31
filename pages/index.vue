@@ -34,7 +34,9 @@
             </div>
           </div>
 
-          <h2 class="mb-6 text-center lg:text-left">О технологии простым языком</h2>
+          <h2 class="mb-6 text-center lg:text-left">
+            О технологии простым языком
+          </h2>
           <!-- <UBadge class="dynamic-font-size" label="/start/config.vue" color="gray"/> -->
 
           <div class="flex mb-8">
@@ -83,7 +85,9 @@
             </div>
           </div>
 
-          <h2 class="mb-3 text-center lg:text-left">С чего начать или порог вхождения</h2>
+          <h2 class="mb-3 text-center lg:text-left">
+            С чего начать или порог вхождения
+          </h2>
 
           <div>
             <p>
@@ -117,7 +121,9 @@
             </p>
           </div>
 
-          <h2 class="mt-8 mb-4 text-center lg:text-left">Необходимое программное обеспечение</h2>
+          <h2 class="mt-8 mb-4 text-center lg:text-left">
+            Необходимое программное обеспечение
+          </h2>
 
           <div
             class="flex flex-col lg:flex-row text-[16px] rounded-lg bg-[#f8f8f8] dark:bg-[#0e1011] overflow-hidden"
@@ -127,7 +133,7 @@
                 <bodyLogoNode />
               </div>
               <p class="mt-4">
-                Должно быть установлено в обязательном порядке. Установите с
+                Должна быть установлена в обязательном порядке. Установите с
                 <a
                   href="https://nodejs.org/"
                   target="_blank"
@@ -194,13 +200,14 @@
 const demo = ref("Я реактивная строка");
 const showIntro = ref(true);
 const titlePage = "Разработка приложения Nuxt 3";
-const descPage = "Краткое описание содержания страницы. До 300 символов";
+const descPage =
+  "Методичка по разработке реактивного приложения. Создание и описание компонентов. Примеры кода и исходники";
 useSeoMeta({
   title: titlePage + " " + String.fromCharCode(9656) + " IP-55:dev",
   ogTitle: titlePage + " " + String.fromCharCode(9656) + " IP-55:dev",
   description: descPage,
   ogDescription: descPage,
-  ogImage: "files/img/logo_max.png",
+  ogImage: "/files/img/ip55_ogg.jpg",
   twitterCard: "summary_large_image",
 });
 function closeIpDesc() {

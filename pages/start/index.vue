@@ -5,11 +5,82 @@
     <div class="flex flex-col dynamic-font-size lg:flex-row">
       <div class="w-full lg:w-[75%]">
         <div class="lg:mr-8">
-          
-
           <h2 class="mb-6 text-center lg:text-left">Первые шаги</h2>
-          <!-- <UBadge class="dynamic-font-size" label="/start/config.vue" color="gray"/> -->
+          <div>
+            <ol>
+              <li>
+                Убедитесь что у вас установлена
+                <a
+                  href="https://nodejs.org/"
+                  target="_blank"
+                  class="text-underline"
+                  >Node.js</a
+                >
+              </li>
+              <li>
+                Скачайте подготовленный
+                <a href="/files/nuxt-start.zip" class="text-underline"
+                  >архив шаблона Nuxt 3</a
+                >
+              </li>
+              <li>
+                Распакуйте шаблон в любое место вашего ПК, используйте в пути
+                только латинские символы.
+              </li>
+              <li>
+                Откройте папку шаблона в
+                <a
+                  href="https://code.visualstudio.com/"
+                  target="_blank"
+                  class="text-underline"
+                >
+                  Visual Studio Code</a
+                >
+              </li>
+              <li>
+                Откройте терминал и для сборки проекта запустите команду
+                <UBadge
+                  class="dynamic-font-size"
+                  label="npm install"
+                  color="gray"
+                />
+              </li>
+              <li>
+                По окончанию сборки запустите в терминале 
+                <UBadge
+                  class="dynamic-font-size"
+                  label="npm run dev"
+                  color="gray"
+                />
+              </li>
+              <li>
+                Проект доступен по адресу
+                <a
+                  href="http://localhost:3000/"
+                  target="_blank"
+                  class="text-underline"
+                  >http://localhost:3000/</a
+                >, удачных исследований!
+              </li>
+            </ol>
 
+            <div class="grid grid-cols-4 gap-4 my-8">
+              <div
+                v-for="(src, index) in imgs"
+                :key="index"
+                class="pic"
+                @click="() => showImg(index)"
+              >
+                <img :src="src" />
+              </div>
+              <VueEasyLightbox
+                :visible="visibleRef"
+                :imgs="imgs"
+                :index="indexRef"
+                @hide="onHide"
+              />
+            </div>
+          </div>
 
           <div class="flex justify-between mt-16 mb-8">
             <NuxtLink to="/">
@@ -42,22 +113,56 @@
 
 <script setup>
 const titlePage = "Стартовый шаблон Nuxt 3";
-const descPage = "Краткое описание содержания страницы. До 300 символов";
+const descPage = "Описаны первые шаги и базовые механики";
 useSeoMeta({
   title: titlePage + " " + String.fromCharCode(9656) + " IP-55:dev",
   ogTitle: titlePage + " " + String.fromCharCode(9656) + " IP-55:dev",
   description: descPage,
   ogDescription: descPage,
-  ogImage: "files/img/logo_max.png",
+  ogImage: "/files/img/ip55_ogg.jpg",
   twitterCard: "summary_large_image",
 });
 
+const visibleRef = ref(false);
+const indexRef = ref(0);
 
-const code = ref(`<input v-model="demo">
-<div>{{ demo }}</div>
+const imgs = [
+  "https://via.placeholder.com/450.png/",
+  "https://via.placeholder.com/300.png/",
+  "https://via.placeholder.com/150.png/",
+  { src: "https://via.placeholder.com/450.png/", title: "this is title" },
+];
 
-const demo = ref("Я реактивная строка")
+const setNavbarWidth = inject('setNavbarWidth')
 
-// Всего три строки кода делают это. Потрясающе!
-`);
+const showImg = (index) => {
+  indexRef.value = index
+  visibleRef.value = true
+  document.body.style.paddingRight = '8px'
+  if (setNavbarWidth) {
+    setNavbarWidth('calc(100% - 8px)')
+  }
+}
+
+const onHide = () => {
+  visibleRef.value = false
+  document.body.style.paddingRight = ''
+  if (setNavbarWidth) {
+    setNavbarWidth('100%')
+  }
+}
+
 </script>
+
+<style lang="css" scoped>
+ol {
+  list-style: auto;
+  margin-left: 32px;
+}
+.vel-modal {
+  background: rgba(0, 0, 0, .8);
+}
+.vel-btns-wrapper .btn__close {
+  right: 14px;
+}
+</style>

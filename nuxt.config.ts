@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", 'nuxt-easy-lightbox'],
   app: {
     head: {
       htmlAttrs: {
@@ -10,8 +10,8 @@ export default defineNuxtConfig({
       },
       meta: [
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Базовое тело шаблона WEB:гурман' },
-        { property: 'og:image', content: 'https://example.com/site.img' },
+        { property: 'og:site_name', content: 'Базовое тело шаблона IP-55:dev' },
+        { property: 'og:image', content: '/files/img/ip55_ogg.jpg' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       script: [
@@ -24,11 +24,9 @@ export default defineNuxtConfig({
         { rel: 'manifest', href: '/fav/site.webmanifest' },
         ],
       style: [
-        // <style type="text/css">:root { color: red }</style>
         // { children: ':root { color: red }', type: 'text/css' }
       ],
       noscript: [
-        // <noscript>JavaScript is required</noscript>
         // { children: 'JavaScript is required' }
       ]
     }

@@ -13,7 +13,8 @@
     "@iconify-json/material-symbols": "^1.1.89",
     "@nuxt/devtools": "latest",
     "@nuxt/ui": "^2.18.4",
-    "nuxt": "^3.12.4"
+    "nuxt": "^3.12.4",
+    "nuxt-easy-lightbox": "^1.0.2"
   },
   "dependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",
