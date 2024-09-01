@@ -19,7 +19,7 @@
               </li>
               <li>
                 Скачайте подготовленный
-                <a href="/files/nuxt-start.zip" class="text-underline"
+                <a href="/files/nuxt-start.zip" class="text-underline" download="nuxt-start.zip"
                   >архив шаблона Nuxt 3</a
                 >
               </li>
