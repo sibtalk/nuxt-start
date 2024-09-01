@@ -4,14 +4,24 @@
 
     <div class="flex flex-col dynamic-font-size lg:flex-row">
       <div class="w-full lg:w-[75%]">
-        <div class="lg:mr-8">
-          
-          <p>Ваша первая верстка</p>
-
+        <div class="lg:mr-8 h-full flex flex-col justify-between">
+          <div
+            class="wglass w-[280px] mx-auto p-4 mt-32 dynamic-font-size text-center"
+          >
+            В разработке...
+          </div>
 
           <div class="flex justify-between mt-16 mb-8">
             <NuxtLink to="/start">
               <UButton
+                class="flex sm:hidden"
+                icon="i-heroicons-arrow-long-left"
+                size="xl"
+                color="primary"
+                variant="outline"
+                :trailing="false" />
+              <UButton
+                class="hidden sm:flex"
                 icon="i-heroicons-arrow-long-left"
                 size="xl"
                 color="primary"
@@ -21,6 +31,16 @@
             /></NuxtLink>
             <NuxtLink to="/start/config">
               <UButton
+                disabled
+                class="flex sm:hidden"
+                icon="i-heroicons-arrow-long-right"
+                size="xl"
+                color="primary"
+                variant="solid"
+                :trailing="true" />
+              <UButton
+                disabled
+                class="hidden sm:flex"
                 icon="i-heroicons-arrow-long-right"
                 size="xl"
                 color="primary"
@@ -49,5 +69,4 @@ useSeoMeta({
   ogImage: "/files/img/ip55_ogg.jpg",
   twitterCard: "summary_large_image",
 });
-
 </script>

@@ -37,7 +37,6 @@
           <h2 class="mb-6 text-center lg:text-left">
             О технологии простым языком
           </h2>
-          <!-- <UBadge class="dynamic-font-size" label="/start/config.vue" color="gray"/> -->
 
           <div class="flex mb-8">
             <div class="hidden sm:flex sm:w-[21%]">

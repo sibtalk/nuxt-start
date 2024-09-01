@@ -34,38 +34,47 @@
       </li>
       <li>
         <UAlert
-          icon="i-heroicons-light-bulb"
+          icon="i-material-symbols-hard-drive-outline"
           color="white"
           variant="outline"
-          title="Стартовый шаблон"
-          description="Необходимые модули для старта проекта."
+          title="Аренда VDS"
+          description="Гарантированный кешбек по реферальной ссылке."
         />
       </li>
       <li>
         <UAlert
-          icon="i-heroicons-light-bulb"
+          icon="i-material-symbols-settings-applications-outline-sharp"
           color="white"
           variant="outline"
-          title="Стартовый шаблон"
-          description="Необходимые модули для старта проекта."
+          title="Настройка сервера"
+          description="Установка панели управления и окружения для Nuxt."
         />
       </li>
       <li>
         <UAlert
-          icon="i-heroicons-light-bulb"
+          icon="i-material-symbols-lan-outline"
           color="white"
           variant="outline"
-          title="Стартовый шаблон"
-          description="Необходимые модули для старта проекта."
+          title="Простой API для сайта"
+          description="Удаленное подключение к базе данных MYSQL."
         />
       </li>
       <li>
         <UAlert
-          icon="i-heroicons-light-bulb"
+          icon="i-heroicons-qr-code"
+          color="white"
+          variant="outline"
+          title="Компонент QR Code"
+          description="Создание и скачивание QR в различных форматах."
+        />
+      </li>
+      <li>
+        <UAlert
+          icon="i-material-symbols-notifications-active-outline-rounded"
           color="red"
           variant="outline"
-          title="Стартовый шаблон"
-          description="Необходимые модули для старта проекта."
+          title="Прямо ОГОНЬ!"
+          description="Различные идеи которые могут вклиниться без очереди."
         />
       </li>
       

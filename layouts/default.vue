@@ -192,22 +192,6 @@ header.active {
   border-color: #0e1011;
   background-color: #0e1011c2 !important;
 }
-.wscreen {
-  width: 100%;
-  min-height: 70vh;
-  background-color: #fff;
-}
-.dark .wscreen {
-  background-color: #0e1011;
-}
-.wscreen-shadow {
-  width: 100%;
-  min-height: 70vh;
-  box-shadow: inset 0 0 20px 0px #00a7ec36;
-}
-.dark .wscreen-shadow {
-  background-color: #00000010;
-}
 .footer {
   background-color: #f8f8f8;
 }
