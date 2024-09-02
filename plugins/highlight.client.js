@@ -21,8 +21,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     link.rel = 'stylesheet';
     link.id = 'hljs-theme';
     link.href = theme === 'dark'
-    ? 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css'
-      : 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/a11y-light.min.css';
+    ? 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css'
+      : 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs.min.css';
     document.head.appendChild(link);
   };
 
